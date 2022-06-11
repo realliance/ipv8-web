@@ -1,0 +1,10 @@
+extends ../layouts/global
+
+block scripts 
+  script(type='module' src='dist/viewer/index.js')
+
+block variables 
+  - const title = "Viewer"
+
+block content
+  div.mx-auto#viewer
