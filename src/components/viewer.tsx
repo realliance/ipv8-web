@@ -1,10 +1,10 @@
 import Pixi from '@inlet/react-pixi';
 import React, { useState } from 'react';
 import ReactDOM from "react-dom";
-import Map from "./components/map";
-import building from './assets/building.png';
+import Map from "./map";
+import building from '../assets/building.png';
 
-const App = () => {
+export const Viewer = () => {
   return (
     <Pixi.Stage
       options={{ backgroundColor: 0x1099bb, resolution: window.devicePixelRatio || 1, antialias: true }}
@@ -15,10 +15,3 @@ const App = () => {
     </Pixi.Stage>
   )
 }
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.querySelector('#viewer')
-);

@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@inlet/react-pixi": "^6.8.0",
-    "@marlonmarcello/snowpack-plugin-pug": "^1.0.3",
     "@snowpack/plugin-postcss": "^1.4.3",
     "@snowpack/plugin-sass": "^1.4.0",
     "@types/react": "^17.0.11",
@@ -29,7 +28,7 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "6",
     "sharp": "^0.29.3",
     "snowpack": "^3.8.8",
     "snowpack-plugin-resize-images": "^2.1.6",

@@ -1,7 +1,6 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   plugins: [
-    "@marlonmarcello/snowpack-plugin-pug",
     '@snowpack/plugin-postcss',
     "@snowpack/plugin-sass",
     [
@@ -20,8 +19,5 @@ export default {
     "public/pages": '/',
     "public/static": { url: '/', static: true },
     styles: '/'
-  },
-  devOptions: {
-    openUrl: 'index.html',
   }
 }
