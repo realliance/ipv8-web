@@ -9,7 +9,7 @@ const register = () => (
   <>
     <div className="mx-auto">
       <h1 className="text-3xl font-bold mb-4">Register Now!</h1>
-      <EndpointBlock endpoint="login.dev.ipv8.dev" title="Login Endpoint">
+      <EndpointBlock endpoint="login.nightly.ipv8.dev" title="Login Endpoint">
         <RouteCard verb={RouteVerb.POST} description="Registers a new unlicensed user" path="/register" />
         <RouteCard verb={RouteVerb.GET} authorized description="Authenticates a user" path="/login" />
         <RouteCard verb={RouteVerb.GET} authorized description="Retrieves information about a user" path="/user" />
