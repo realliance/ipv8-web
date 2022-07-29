@@ -1,5 +1,5 @@
 import React from 'react';
-import { Viewer } from '../components/viewer';
+import { Viewer } from '../components/Viewer';
 
 export default () => {
   return (

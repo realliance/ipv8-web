@@ -1,7 +1,7 @@
 import Pixi from '@inlet/react-pixi';
 import React, { useState } from 'react';
 import ReactDOM from "react-dom";
-import Map from "./map";
+import Map from "./Map";
 import building from '../assets/building.png';
 
 export const Viewer = () => {

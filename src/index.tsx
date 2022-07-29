@@ -1,28 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Link, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter, Link, Route, Routes, useLocation } from "react-router-dom";
 
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 interface Page {
   title: string,
   path: string,
-  element: React.ReactElement
+  element: React.ReactElement,
+  displayInNav?: boolean,
 }
 
 const pages: Page[] = [
   {
     title: "Home",
     path: "/",
-    element: <Home />
+    element: <Home />,
+  },
+  {
+    title: "Login",
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    title: "Register",
+    path: "/register",
+    element: <Register />,
+    displayInNav: false,
   }
-]
+].reverse()
 
 const App = () => {
   const location = useLocation();
   const routes = pages.map(page => <Route key={page.path} path={page.path} element={page.element} />);
 
-  const links = pages.map(page => {
+  const links = pages.filter(page => page.displayInNav !== undefined ? page.displayInNav : true).map(page => {
     const selected = location.pathname === page.path;
     const classes = selected ? "underline" : "";
     return <Link key={page.path} className={classes} to={page.path}>{page.title}</Link>
@@ -45,9 +59,9 @@ const App = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
