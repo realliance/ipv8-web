@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build --polyfill-node",
     "prepare": "husky install"
   },
   "dependencies": {
