@@ -8,7 +8,7 @@ export default () => {
   const [password, setPassword] = useState<string>("");
   return (
     <>
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <h1 className="text-3xl font-bold">Login</h1>
         <h1 className="text-sm font-bold text-slate-500">This is an ugly placeholder login please select register</h1>
         <div className="px-4 py-5 bg-white space-y-6 sm:p-6">

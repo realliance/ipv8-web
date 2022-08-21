@@ -7,7 +7,7 @@ import { Viewer } from '../components/Viewer';
 
 const register = () => (
   <>
-    <div className="mx-auto">
+    <div className="container mx-auto">
       <h1 className="text-3xl font-bold mb-4">Register Now!</h1>
       <EndpointBlock endpoint="login.nightly.ipv8.dev" title="Login Endpoint">
         <RouteCard verb={RouteVerb.POST} description="Registers a new unlicensed user" path="/register" />

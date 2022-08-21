@@ -43,8 +43,8 @@ const App = () => {
   });
 
   return (
-    <div className="container mx-auto my-2 py-3">
-      <div className="flex flex-row justify-left gap-6 mb-12">
+    <div className="my-2 py-3">
+      <div className="container mx-auto flex flex-row justify-left gap-6 mb-12">
         <h1 className="text-2xl font-bold">Ipv8</h1>
         <div className="grow flex flex-row-reverse gap-6">
           {links}
